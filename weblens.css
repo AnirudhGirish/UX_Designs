@@ -1,0 +1,35 @@
+:root{
+    --light: #cde6f5;
+    --dark:#45503b;
+    --darker:#8e9dcc;
+    --darkest:#707078;
+    --more:#554640;
+}
+body{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position:cover;
+    background-color:var(--light);
+}
+.navbar{
+    width: 50vw;
+    height: fit-content;
+    margin-left:22vw ;
+}
+.navbar ul {
+    list-style-type: none;
+}
+.navbar ul .heading{
+    font-size: 4vh;
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar ul li a{
+    text-decoration: none;
+}
+
