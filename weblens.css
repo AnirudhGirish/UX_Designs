@@ -8,28 +8,36 @@
 body{
     margin: 0;
     padding: 0;
-    text-decoration: none;
     background-repeat: no-repeat;
     background-position: center;
-    background-position:cover;
+    background-size:cover;
     background-color:var(--light);
 }
 .navbar{
-    width: 50vw;
-    height: fit-content;
-    margin-left:22vw ;
-}
-.navbar ul {
-    list-style-type: none;
-}
-.navbar ul .heading{
-    font-size: 4vh;
-}
-.navbar ul{
+    width: 50%;
     display: flex;
     justify-content: space-between;
+    margin-left: 20vw;
+    align-items:baseline;
 }
-.navbar ul li a{
+.navbar a{
     text-decoration: none;
+    color: var(--dark);
+    font-size: 2vw;
 }
-
+.navbar a:hover{
+    color: var(--darkest);
+}
+.navbar h1{
+    color: var(--dark);
+}
+hr{
+    color: var(--darker);
+    border: solid 0.2vw;
+}
+section p {
+    margin: 2vw;
+}
+.footer{
+    
+}
