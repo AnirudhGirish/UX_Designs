@@ -22,7 +22,7 @@ body{
     margin:auto;
     align-items:baseline;
     background-color: var(--dark);
-    border-radius: 0.4svw;
+    border-radius:0 0 1vw 1vw;
 }
 .navbar a{
     margin-left:3vw ;
@@ -31,7 +31,7 @@ body{
     font-size: 1.5em;
 }
 .navbar a:hover{
-    color: var(--darkest);
+    color: orangered;
 }
 .navbar h1{
     color: var(--light);
