@@ -12,32 +12,40 @@ body{
     background-position: center;
     background-size:cover;
     background-color:var(--light);
+    box-sizing: border-box;
+    font-size: 100%;
 }
 .navbar{
-    width: 50%;
+    max-width: 100%;
     display: flex;
-    justify-content: space-between;
-    margin-left: 20vw;
+    justify-content: center;
+    margin:auto;
     align-items:baseline;
+    background-color: var(--dark);
+    border-radius: 0.4svw;
 }
 .navbar a{
+    margin-left:3vw ;
     text-decoration: none;
-    color: var(--dark);
-    font-size: 2vw;
+    color: var(--light);
+    font-size: 1.5em;
 }
 .navbar a:hover{
     color: var(--darkest);
 }
 .navbar h1{
-    color: var(--dark);
-}
-hr{
-    color: var(--darker);
-    border: solid 0.2vw;
+    color: var(--light);
 }
 section p {
-    margin: 2vw;
+    max-width: 85vw;
+    margin-left: 7vw;
+    border: 0.3vw solid black ;
+    border-left:0.6vw solid red ;
+    font-size: 1.2em;
 }
-.footer{
-    
+footer{
+    background-color:var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 1vw;
 }
