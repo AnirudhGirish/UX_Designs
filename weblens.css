@@ -48,4 +48,5 @@ footer{
     color: var(--light);
     text-align: center;
     padding: 1vw;
+    margin: 0.5vw;
 }
