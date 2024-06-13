@@ -50,12 +50,40 @@ ul{
     color: var(--light);
     font-size: 10vw;
 }
-section{
-    max-width: 85vw;
-    margin-left: 7vw;
+section .log{
+    display: flex;
+    height: fit-content;
+    max-width: fit-content;
+    margin: auto;
     border: 0.3vw solid black ;
     border-left:0.6vw solid red ;
     font-size: 1.2em;
+    padding: 2vw;
+}
+section .log input{
+    height: 3vh;
+    width: 10vw;
+    background-color:var(--dark);
+    color: var(--light);
+    border: none;
+}
+section .log input:active{
+    border-color: var(--darker);
+}
+section .log button{
+    width: 18vw;
+    height: 4vh;
+    color: var(--light);
+    background-color: var(--dark);
+    border-style: solid;
+    border-radius: 0.5vw;
+    margin-top: 2vh;
+}
+section .log button:hover{
+    border-radius: 0.8vw;
+    color: var(--dark);
+    background-color: var(--light);
+    border-color: var(--more);
 }
 footer{
     background-color:var(--dark);
