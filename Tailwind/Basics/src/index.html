@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>Basics | Tailwind</title>
+</head>
+<body>
+  <nav class="bg-purple-200 text-stone-900 md:flex md:justify-between md:p-5">
+    <div class="logo font-serif font-semibold flex justify-center p-3 md:p-0 md:justify-normal">
+        TW
+    </div>
+    <ul class="flex gap-1 justify-around md:gap-8 ">
+        <li class="hover:text-violet-700 hover:cursor-pointer transition-all">Home</li>
+        <li class="hover:text-violet-700 hover:cursor-pointer transition-all">About Us</li>
+        <li class="hover:text-violet-700 hover:cursor-pointer transition-all">Content</li>
+        <li class="hover:text-violet-700 hover:cursor-pointer transition-all">Conatct Us</li>
+    </ul>
+    <button type="button" class="hidden border-2 border-purple-600 border-dashed bg-purple-400 rounded-lg md:pl-2 md:pr-2 md:pt-1 md:pb-1 md:hidden lg:block xl:block hover:border-solid hover:bg-stone-900 hover:text-purple-400 text-stone-900 transition-all">
+        Get Started
+    </button>
+  </nav>
+  <main class="min-h-screen">
+  </main>
+  <footer class="bg-purple-200 text-stone-900 md:columns-2 p-4 inset-x-0 bottom-0 ">
+    <div class="logo  flex justify-center gap-3 md:justify-normal md:p-3 md:flex-col break-after-column">
+        <h1 class="font-serif font-semibold md:text-2xl">TW</h1>
+        <h2 class="font-serif md:text-xl">
+            TailWind CSS
+        </h2>
+        <p class="hidden  lg:text-clip xl:block ">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias quidem expedita rem minus nisi Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga aperiam cumque expedita iure perspiciatis labore mollitia et pariatur natus tempore! Cumque, soluta debitis quos ipsam explicabo dolorum quas expedita impedit!
+        </p>
+    </div>
+    <div class="border-2 border-solid border-black p-10 m-6 flex justify-center align-middle rounded-lg hover:border-green-600">
+        <div class="border-2 border-solid border-black p-10 m-2 rounded-lg hover:border-blue-600">
+            <div class="border-2 border-solid border-black p-4 m-1 rounded-lg hover:border-red-600">
+                <h1 class="block sm:hidden  text-violet-700 hover:text-black">
+                    You are on a mobile
+                </h1>
+                <h1 class="hidden sm:block md:block lg:block xl:hidden text-violet-700 hover:text-black">
+                    You are on a tablet
+                </h1>
+                <h1 class="hidden xl:block text-violet-700 hover:text-black hover:uppercase">
+                    You are on a desktop or laptop
+                </h1>
+            </div>
+        </div>
+        
+    </div>
+  </footer>
+</body>
+</html>
