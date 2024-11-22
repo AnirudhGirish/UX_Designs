@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Stream</title>
+</head>
+
+<body>
+    <nav class="bg-emerald-200 text-slate-800 dark:bg-emerald-900 dark:text-emerald-300 w-full h-auto md:flex justify-between p-4">
+        <div class="logo text-xl font-serif font-semibold flex justify-center mb-2 md:mb-0 md:justify-normal">
+            STREA<span class="text-red-700">M</span>
+        </div>
+        <ul class="flex gap-6 justify-center md:justify-normal my-4 md:my-0 text-slate-800 dark:text-emerald-300 ">
+            <li class="hover:cursor-pointer hover:text-red-700">Home</li>
+            <li class="hover:cursor-pointer hover:text-red-700">About Us</li>
+            <li class="hover:cursor-pointer hover:text-red-700">Contact Us</li>
+        </ul>
+        <div class="mt-4 md:mt-0">
+            <ul class="flex gap-4 justify-center md:justify-normal">
+                <li>
+                    <button type="button"
+                        class="shadow bg-emerald-600 py-2 px-6 md:px-2 md:py-1 rounded-md hover:bg-slate-800 hover:text-emerald-200">Login</button>
+                </li>
+                <li>
+                    <button type="button" id="darkModeToggle"
+                        class="shadow bg-emerald-600 py-2 px-6 md:px-2 md:py-1 rounded-md hover:bg-slate-800 hover:text-emerald-200">☀️</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="dark:bg-zinc-700">
+        <div class="work w-full h-auto flex flex-col md:flex-row gap-4 p-4">
+            <div>
+                VideoPlayer
+            </div>
+            <div>
+                Playlist
+            </div>
+        </div>
+        <div class="content w-full h-auto flex flex-col md:flex-row m-5 text-center">
+            <div class="bg-slate-300 text-black dark:text-emerald-200 dark:bg-slate-600 w-48 flex-col p-4 rounded-md m-3">
+                <div>
+                    <img src="https://images.pexels.com/photos/3227986/pexels-photo-3227986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="h-auto w-40 shadow-md rounded">
+                </div>
+                <div>
+                    <h1>Title</h1>
+                    <p>Discription : Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, labore.</p>
+                </div>
+            </div>
+            <div class="bg-slate-300 text-black dark:text-emerald-200 dark:bg-slate-600 w-48 flex-col p-4 rounded-md m-3">
+                <div>
+                    <img src="https://images.pexels.com/photos/3227986/pexels-photo-3227986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="h-auto w-40 shadow-md rounded">
+                </div>
+                <div>
+                    <h1>Title</h1>
+                    <p>Discription : Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, labore.</p>
+                </div>
+            </div>
+            <div class="bg-slate-300 text-black dark:text-emerald-200 dark:bg-slate-600 w-48 flex-col p-4 rounded-md m-3">
+                <div>
+                    <img src="https://images.pexels.com/photos/3227986/pexels-photo-3227986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="h-auto w-40 shadow-md rounded">
+                </div>
+                <div>
+                    <h1>Title</h1>
+                    <p>Discription : Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, labore.</p>
+                </div>
+            </div>
+            <div class="bg-slate-300 text-black dark:text-emerald-200 dark:bg-slate-600 w-48 flex-col p-4 rounded-md m-3">
+                <div>
+                    <img src="https://images.pexels.com/photos/3227986/pexels-photo-3227986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="h-auto w-40 shadow-md rounded">
+                </div>
+                <div>
+                    <h1>Title</h1>
+                    <p>Discription : Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, labore.</p>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </main>
+    <script>
+        const toggleButton = document.getElementById('darkModeToggle');
+
+        toggleButton.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            toggleButton.textContent = toggleButton.textContent === '🌙' ? '☀️' : '🌙';
+            toggleButton.classList.toggle('bg-emerald-600');
+            toggleButton.classList.toggle('bg-slate-800');
+        });
+    </script>
+</body>
+
+</html>
