@@ -9,7 +9,8 @@
 </head>
 
 <body>
-    <nav class="bg-emerald-200 text-slate-800 dark:bg-emerald-900 dark:text-emerald-300 w-full h-auto md:flex justify-between p-4">
+    <nav
+        class="bg-emerald-200 text-slate-800 dark:bg-emerald-900 dark:text-emerald-300 w-full h-auto md:flex justify-between p-4">
         <div class="logo text-xl font-serif font-semibold flex justify-center mb-2 md:mb-0 md:justify-normal">
             STREA<span class="text-red-700">M</span>
         </div>
@@ -26,65 +27,154 @@
                 </li>
                 <li>
                     <button type="button" id="darkModeToggle"
-                        class="shadow bg-emerald-600 py-2 px-6 md:px-2 md:py-1 rounded-md hover:bg-slate-800 hover:text-emerald-200">☀️</button>
+                        class="shadow bg-emerald-600 py-2 px-6 md:px-2 md:py-1 rounded-md hover:bg-slate-800 hover:text-emerald-200">🌙</button>
                 </li>
             </ul>
         </div>
     </nav>
     <main class="dark:bg-zinc-700">
-        <div class="work w-full h-auto flex flex-col md:flex-row gap-4 p-4">
-            <div>
-                VideoPlayer
+        <div class="work w-full h-auto flex flex-col md:flex-row">
+            <div class="md:m-5 w-96 mx-auto mt-5 md:w-2/3 h-auto">
+                <video src="../assets/12234962_3840_2160_30fps.mp4" controls class="rounded-md"></video>
             </div>
-            <div>
-                Playlist
+            <div id="playlist"
+                class="hidden md:block bg-slate-300 w-1/3 h-auto md:m-5 rounded-md text-black text-center py-10 dark:text-white dark:bg-slate-600">
+                <span class="text-3xl">Add to Queue</span>
+                <ul id="queue" class="h-auto overflow-y-auto flex flex-col gap-3"></ul>
             </div>
         </div>
-        <div class="content w-full h-auto flex flex-col md:flex-row m-5 text-center">
-            <div class="bg-slate-300 text-black dark:text-emerald-200 dark:bg-slate-600 w-48 flex-col p-4 rounded-md m-3">
+        <div class="content w-full h-auto flex flex-col md:flex-wrap md:flex-row md:mt-5">
+            <div class="bg-slate-300 text-black dark:text-white dark:bg-slate-600 w-48 flex-col p-4 rounded-md mt-3 text-center shadow-md mx-auto md:mx-5 hover:border-solid hover:border-2 hover:border-black hover:cursor-pointer draggable"
+                draggable="true">
                 <div>
-                    <img src="https://images.pexels.com/photos/3227986/pexels-photo-3227986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="h-auto w-40 shadow-md rounded">
+                    <img src="https://images.pexels.com/photos/3227986/pexels-photo-3227986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="" class="h-auto w-40 shadow-md rounded">
                 </div>
                 <div>
-                    <h1>Title</h1>
-                    <p>Discription : Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, labore.</p>
-                </div>
-            </div>
-            <div class="bg-slate-300 text-black dark:text-emerald-200 dark:bg-slate-600 w-48 flex-col p-4 rounded-md m-3">
-                <div>
-                    <img src="https://images.pexels.com/photos/3227986/pexels-photo-3227986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="h-auto w-40 shadow-md rounded">
-                </div>
-                <div>
-                    <h1>Title</h1>
-                    <p>Discription : Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, labore.</p>
+                    <h1 class="font-semibold m-2">Title 1</h1>
+                    <p>Discription : Lorem ipsum dolor sit amet cons adipisicing elit Lorem ipsum dolor sit amet
+                        consectetur.</p>
                 </div>
             </div>
-            <div class="bg-slate-300 text-black dark:text-emerald-200 dark:bg-slate-600 w-48 flex-col p-4 rounded-md m-3">
+            <div class="bg-slate-300 text-black dark:text-white dark:bg-slate-600 w-48 flex-col p-4 rounded-md my-3 text-center shadow-md mx-auto md:mx-5 hover:border-solid hover:border-2 hover:border-black hover:cursor-pointer draggable"
+                draggable="true">
                 <div>
-                    <img src="https://images.pexels.com/photos/3227986/pexels-photo-3227986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="h-auto w-40 shadow-md rounded">
+                    <img src="https://images.pexels.com/photos/3227986/pexels-photo-3227986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="" class="h-auto w-40 shadow-md rounded">
                 </div>
                 <div>
-                    <h1>Title</h1>
-                    <p>Discription : Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, labore.</p>
-                </div>
-            </div>
-            <div class="bg-slate-300 text-black dark:text-emerald-200 dark:bg-slate-600 w-48 flex-col p-4 rounded-md m-3">
-                <div>
-                    <img src="https://images.pexels.com/photos/3227986/pexels-photo-3227986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="h-auto w-40 shadow-md rounded">
-                </div>
-                <div>
-                    <h1>Title</h1>
-                    <p>Discription : Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, labore.</p>
+                    <h1 class="font-semibold m-2">Title 2</h1>
+                    <p>Discription : Lorem ipsum dolor sit amet cons adipisicing elit Lorem ipsum dolor sit amet
+                        consectetur.</p>
                 </div>
             </div>
-
-
-
-
-
+            <div class="bg-slate-300 text-black dark:text-white dark:bg-slate-600 w-48 flex-col p-4 rounded-md my-3 text-center shadow-md  mx-auto md:mx-5 hover:border-solid hover:border-2 hover:border-black hover:cursor-pointer draggable"
+                draggable="true">
+                <div>
+                    <img src="https://images.pexels.com/photos/3227986/pexels-photo-3227986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="" class="h-auto w-40 shadow-md rounded">
+                </div>
+                <div>
+                    <h1 class="font-semibold m-2">Title 3</h1>
+                    <p>Discription : Lorem ipsum dolor sit amet cons adipisicing elit Lorem ipsum dolor sit amet
+                        consectetur.</p>
+                </div>
+            </div>
+            <div class="bg-slate-300 text-black dark:text-white dark:bg-slate-600 w-48 flex-col p-4 rounded-md my-3 text-center shadow-md  mx-auto md:mx-5 hover:border-solid hover:border-2 hover:border-black hover:cursor-pointer draggable"
+                draggable="true">
+                <div>
+                    <img src="https://images.pexels.com/photos/3227986/pexels-photo-3227986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="" class="h-auto w-40 shadow-md rounded">
+                </div>
+                <div>
+                    <h1 class="font-semibold m-2">Title 4</h1>
+                    <p>Discription : Lorem ipsum dolor sit amet cons adipisicing elit Lorem ipsum dolor sit amet
+                        consectetur.</p>
+                </div>
+            </div>
+            <div class="bg-slate-300 text-black dark:text-white dark:bg-slate-600 w-48 flex-col p-4 rounded-md my-3 text-center shadow-md  mx-auto md:mx-5 hover:border-solid hover:border-2 hover:border-black hover:cursor-pointer draggable"
+                draggable="true">
+                <div>
+                    <img src="https://images.pexels.com/photos/3227986/pexels-photo-3227986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="" class="h-auto w-40 shadow-md rounded">
+                </div>
+                <div>
+                    <h1 class="font-semibold m-2">Title 5</h1>
+                    <p>Discription : Lorem ipsum dolor sit amet cons adipisicing elit Lorem ipsum dolor sit amet
+                        consectetur.</p>
+                </div>
+            </div>
+            <div class="bg-slate-300 text-black dark:text-white dark:bg-slate-600 w-48 flex-col p-4 rounded-md my-3 text-center shadow-md mx-auto md:mx-5 hover:border-solid hover:border-2 hover:border-black hover:cursor-pointer draggable"
+                draggable="true">
+                <div>
+                    <img src="https://images.pexels.com/photos/3227986/pexels-photo-3227986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="" class="h-auto w-40 shadow-md rounded">
+                </div>
+                <div>
+                    <h1 class="font-semibold m-2">Title 6</h1>
+                    <p>Discription : Lorem ipsum dolor sit amet cons adipisicing elit Lorem ipsum dolor sit amet
+                        consectetur.</p>
+                </div>
+            </div>
+            <div class="bg-slate-300 text-black dark:text-white dark:bg-slate-600 w-48 flex-col p-4 rounded-md my-3 text-center shadow-md mx-auto md:mx-5 hover:border-solid hover:border-2 hover:border-black hover:cursor-pointer draggable"
+                draggable="true">
+                <div>
+                    <img src="https://images.pexels.com/photos/3227986/pexels-photo-3227986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="" class="h-auto w-40 shadow-md rounded">
+                </div>
+                <div>
+                    <h1 class="font-semibold m-2">Title 7</h1>
+                    <p>Discription : Lorem ipsum dolor sit amet cons adipisicing elit Lorem ipsum dolor sit amet
+                        consectetur.</p>
+                </div>
+            </div>
+            <div class="bg-slate-300 text-black dark:text-white dark:bg-slate-600 w-48 flex-col p-4 rounded-md my-3 text-center shadow-md mx-auto md:mx-5 hover:border-solid hover:border-2 hover:border-black hover:cursor-pointer draggable"
+                draggable="true">
+                <div>
+                    <img src="https://images.pexels.com/photos/3227986/pexels-photo-3227986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="" class="h-auto w-40 shadow-md rounded">
+                </div>
+                <div>
+                    <h1 class="font-semibold m-2">Title 8</h1>
+                    <p>Discription : Lorem ipsum dolor sit amet cons adipisicing elit Lorem ipsum dolor sit amet
+                        consectetur.</p>
+                </div>
+            </div>
+            <div class="bg-slate-300 text-black dark:text-white dark:bg-slate-600 w-48 flex-col p-4 rounded-md my-3 text-center shadow-md mx-auto md:mx-5 hover:border-solid hover:border-2 hover:border-black hover:cursor-pointer draggable"
+                draggable="true">
+                <div>
+                    <img src="https://images.pexels.com/photos/3227986/pexels-photo-3227986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="" class="h-auto w-40 shadow-md rounded">
+                </div>
+                <div>
+                    <h1 class="font-semibold m-2">Title 9</h1>
+                    <p>Discription : Lorem ipsum dolor sit amet cons adipisicing elit Lorem ipsum dolor sit amet
+                        consectetur.</p>
+                </div>
+            </div>
+            <div class="bg-slate-300 text-black dark:text-white dark:bg-slate-600 w-48 flex-col p-4 rounded-md my-3 text-center shadow-md mx-auto md:mx-5 hover:border-solid hover:border-2 hover:border-black hover:cursor-pointer draggable"
+                draggable="true">
+                <div>
+                    <img src="https://images.pexels.com/photos/3227986/pexels-photo-3227986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="" class="h-auto w-40 shadow-md rounded">
+                </div>
+                <div>
+                    <h1 class="font-semibold m-2">Title 10</h1>
+                    <p>Discription : Lorem ipsum dolor sit amet cons adipisicing elit Lorem ipsum dolor sit amet
+                        consectetur.</p>
+                </div>
+            </div>
         </div>
     </main>
+    <footer
+        class="bg-emerald-200 text-slate-800 dark:bg-emerald-900 dark:text-emerald-300 w-full h-auto md:flex justify-between p-4">
+        <div class="logo text-4xl font-serif font-semibold flex justify-center mb-2 md:mb-0 md:justify-normal">
+            STREA<span class="text-red-700">M</span>
+        </div>
+        div
+    </footer>
     <script>
+        // Dark Mode Toggle
         const toggleButton = document.getElementById('darkModeToggle');
 
         toggleButton.addEventListener('click', () => {
@@ -93,6 +183,81 @@
             toggleButton.classList.toggle('bg-emerald-600');
             toggleButton.classList.toggle('bg-slate-800');
         });
+
+        // Select draggable elements and the playlist div
+        const draggables = document.querySelectorAll('.draggable');
+        const queue = document.getElementById('queue');
+        const playlist = document.getElementById('playlist');
+
+        let currentDraggedElement = null;
+
+        // Configure draggable elements
+        draggables.forEach((draggable) => {
+            draggable.addEventListener('dragstart', (e) => {
+                const titleElement = draggable.querySelector('h1'); // Fetch the card title
+                currentDraggedElement = titleElement ? titleElement.textContent : null;
+                console.log(`Dragging: ${currentDraggedElement}`);
+                e.dataTransfer.effectAllowed = 'move';
+            });
+
+            draggable.addEventListener('dragend', () => {
+                console.log('Drag ended');
+                currentDraggedElement = null; // Reset dragged element
+            });
+        });
+
+        // Allow drops on the playlist div
+        playlist.addEventListener('dragover', (e) => {
+            e.preventDefault(); // Crucial to allow the drop event
+            console.log('Dragover detected on playlist');
+        });
+
+        playlist.addEventListener('drop', (e) => {
+            e.preventDefault();
+            console.log('Drop detected on playlist');
+            if (currentDraggedElement) {
+                const queueItem = document.createElement('li');
+                queueItem.textContent = currentDraggedElement;
+                queueItem.draggable = true; // Allow re-dragging within or out of the playlist
+                queueItem.classList.add(
+                    'queue-item',
+                    'bg-slate-400',
+                    'w-36',
+                    'mx-auto',
+                    'rounded-md',
+                    'text-black',
+                    'dark:bg-slate-800',
+                    'dark:text-white',
+                    'py-2',
+                    'px-3',
+                    'shadow-md',
+                    'hover:cursor-pointer',
+                    'hover:bg-emerald-200'
+                );
+
+                // Handle drag-remove functionality for queue items
+                queueItem.addEventListener('dragstart', (e) => {
+                    console.log(`Dragging from queue: ${queueItem.textContent}`);
+                    e.dataTransfer.effectAllowed = 'move';
+                });
+
+                queueItem.addEventListener('dragend', (e) => {
+                    const rect = playlist.getBoundingClientRect();
+                    const x = e.clientX;
+                    const y = e.clientY;
+
+                    // If dragged outside the playlist, remove the queue item
+                    if (x < rect.left || x > rect.right || y < rect.top || y > rect.bottom) {
+                        console.log(`Removing: ${queueItem.textContent}`);
+                        queueItem.remove();
+                    }
+                });
+
+                queue.appendChild(queueItem); // Add the new item to the queue
+                console.log(`Dropped: ${currentDraggedElement}`);
+            }
+        });
+
     </script>
 </body>
 

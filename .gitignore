@@ -1,0 +1,30 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+/Users/anirudh/Documents/Code/UX_Designs/Stream/node_modules
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.env
+/Users/anirudh/Documents/Code/UX_Designs/Stream/src/assets/12234962_3840_2160_30fps.mp4
+/Users/anirudh/Documents/Code/UX_Designs/Stream/src/assets/12234962_3840_2160_30fps.mp4
+/Users/anirudh/Documents/Code/UX_Designs/Stream/assets/12234962_3840_2160_30fps.mp4
+Stream/assets/12234962_3840_2160_30fps.mp4
